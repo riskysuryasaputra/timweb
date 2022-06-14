@@ -1,0 +1,432 @@
+html  {
+    scroll-behavior : smooth;
+}
+
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        height : 100vh;    
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      /* SlideShow */
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper-slide h1{
+        position : absolute;
+        top : 7em;
+        z-index : 10;
+        color : white;
+      }
+      .swiper-slide h3 {
+          position : absolute;
+          top : 12em;
+          z-index : 10;
+          color : #F7D716;
+      }
+      .layer {
+          position : absolute;
+          background : black;
+          width : 100%;
+          height : 100vh;
+          opacity : .4;
+      }
+      #oke {
+          z-index : 100;
+          position : absolute;
+          top : 31em;
+          cursor : pointer;
+      }
+      .oke {
+          z-index : 10;
+          position : absolute;
+          top : 32.5em;
+          color : white;
+      }
+      .btn-slideShow {
+          position : absolute;
+          top : 25em;
+          z-index : 10;
+          color : white;
+          transition : .8s;
+      }
+      .btn-slideShow:hover {
+          color : white;
+          filter : drop-shadow(2px 2px 4px black);
+      }
+      .seconds {
+          width : 400px;
+          height : 400px;
+          background : #F7D716;
+          position : absolute;
+          opacity : .9;
+          left : 0;
+          border-radius : 0px 50px 50px 0px;
+      }
+      .h3-seconds {
+        position : absolute;
+        color : white;
+        z-index : 10;
+        left : 0;
+        padding-left : 10px;
+      }
+      .bottom {
+          height : 100vh;
+        }
+        
+        
+        .swiper-slide .layer2 {
+            width : 100%;
+            height : 50vh;
+            position : absolute;
+            bottom : 0;
+            background : #F7D716;
+            opacity : .8;
+        }
+        .third .h3-third {
+            color : white;
+            font-size : 1em;
+            position : absolute;
+            top : 20em;
+        }
+        .sum {
+            font-size : 2em;
+            z-index : 100;
+        }
+        .p-third {
+            position : absolute;
+            top : 23em;
+            color : white;
+        }
+        .btn-third {
+            position : absolute;
+            top : 31em;
+            color : black;
+        }
+
+
+
+        /* About */
+        .parent {
+            width : 100%;
+            height : 150vh;
+        }
+        .tentang-sekolah {
+            width : 100%;
+            height : 70vh;
+            display : flex;
+        }
+        .tentang-kepsek {
+            width : 100%;
+            height : 70vh;
+            background : #F7D716;
+            position : absolute;
+            left : 0;
+            right : 0;
+            display : flex;
+        }
+        .parent-img {
+            width : 400px;
+            overflow : hidden;
+            height : 460px;
+            margin-right : 10em;
+        }
+        .parent-img .img-kepsek {
+            width : 100%;
+            height  :100%;
+            transition : .6s;
+            height : 100%;
+        }
+        .parent-img:hover img {
+            transform : scale(1.2);
+        } 
+        .parent-img .span-kepsek {
+            position : absolute;
+            letter-spacing : 0;
+            width : 300px;
+            bottom : 15px;
+            left : 62%;
+            color : white;
+            transform : scale(0);
+            text-align : center;
+            transition : .4s;
+            opacity : 0;
+        }
+        .parent-img:hover .span-kepsek {
+            z-index : 99;
+            opacity : 1;
+            transform : scale(1);
+        } 
+        /* .layer-kepsek {
+            width : 395px;
+            height : 100%;
+            position : absolute;
+            z-index : 98;
+            display : none;
+            background : black;
+        }
+        .parent-img:hover .layer-kepsek {
+            display : block;
+            opacity : .4;
+        } */
+        .text-about {
+            width : 550px;
+        }
+        .text-about2 {
+            width : 450px;
+            text-align : justify;
+        }
+        .text-about p{
+            text-align : justify;
+        }
+
+        .card:nth-child(2) {
+            filter : drop-shadow(3px 3px 2px lightgrey) drop-shadow(-3px 0px 3px lightgrey);
+            background : white;
+            z-index : 10;
+        }
+        #intro {
+            width : 100%;
+            height : 70vh;
+        }
+        .card-body {
+            position : relative;
+        }
+        .icon {
+            position : absolute;
+            width : 50px;
+            height : 50px;
+            top : -40px;
+            left : 50%;
+            transform : translate(-50%, 0);
+            display : flex;
+            border-radius : 50%;
+            background : salmon;
+        }
+        .span-icon {
+            margin : auto;
+        }
+
+
+        /* Starting */
+        .teks-kartu {
+            width : 550px;
+            text-align : justify;
+        }
+        .kartu {
+            margin-top : 4em;
+        }
+
+
+
+/* DropDown */
+.drop {
+    width : 230px;
+    position : absolute;
+    display : none;
+    opacity : 0;
+    background : #ffc107;
+    border-radius : 5px;
+    transition : .3s;
+}
+.drop li { 
+    margin-top : 2px;
+    list-style: none;
+    padding : 5px;
+}
+.nav-item:hover .drop {
+    display : block;
+    opacity: 1;
+    transform : scale(1);
+}
+.drop li a {
+    color : black;
+    font-weight : bold;
+}
+
+.bottom {
+    height : 100vh;
+}
+
+
+
+span {
+    display : inline-block;
+    letter-spacing : 3px;
+    transition : .8s;
+}
+span:hover {
+    text-shadow : 2px 2px 2px grey;
+    cursor : focus;
+    transform : translateX(3px);
+}
+.fade {
+ animation : fade .6s forwards;
+}
+@keyframes fade {
+    0% {
+        transform : scale(0.6);
+        opacity : 0;
+    }
+    100% {
+        transform : scale(1);
+        opacity : 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media ( max-width : 697px ) {
+    .swiper-slide h1 {
+        top : 8em;
+    }
+    .btn-third {
+        position : absolute;
+        top : 33em;
+        color : black;
+    }
+    .parent {
+        width : 100%;
+        height : 250vh;
+    }
+    .tentang-sekolah {
+        width : 100%;
+        height : 70vh;
+        flex-direction : column;
+        display : flex;
+        margin-bottom : 10em;
+    }
+    .tentang-kepsek {
+        width : 100%;
+        height : 130vh;
+        background : #839AA8;
+        left : 0;
+        right : 0;
+        display : flex;
+        margin-top : 10em;
+        flex-direction : column;
+    }
+    .tentang-kepsek img {
+        margin-left : 3em;
+        width : 25em;
+    }
+    .parent-img .span-kepsek{
+        display : none;
+    }
+    .text-about {
+        width : 250px;
+        top : 3em;
+        position : relative;
+    }
+    .text-about2 {
+        width : 250px;
+        left : 3em;
+        top : 1em;
+        position : relative;
+    }
+    .text-about p{
+        text-align : justify;
+    }
+    .container-fluid {
+        flex-direction : column;
+        width : 310px;
+        margin-left : 100px;
+    }
+    #intro {
+        width:  100%;
+        height : 150vh;
+    }
+    .card {
+        margin-top :55px;
+    }
+    
+    /* SVG */
+    .svg {
+        display : none;
+    }
+
+    /* Starting */
+    #starting {
+        width : 100%;
+        height :200vh;
+    }
+    .parent-element {
+        display : flex;
+        flex-direction : column;
+    }
+    .kartu {
+        width : 300px;
+    }
+    .kartu h3 {
+        text-align : center;
+    }
+    .teks-kartu {
+        width : 100%;
+        text-align : center;
+    }
+    .tombol-kartu {
+        display : block;
+        margin : 0px auto;
+    }
+}      
+
+
+@media ( max-width : 919px) {
+    #starting {
+        width : 100%;
+        height :200vh;
+    }
+    .parent-element {
+        display : flex;
+        flex-direction : column;
+    }
+    .kartu {
+        width : 300px;
+    }
+    .kartu h3 {
+        text-align : center;
+    }
+    .teks-kartu {
+        width : 100%;
+        text-align : center;
+    }
+    .tombol-kartu {
+        display : block;
+        margin : 0px auto;
+    }
+
+}
